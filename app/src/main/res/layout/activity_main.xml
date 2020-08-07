@@ -1,13 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
+    android:orientation="horizontal"
+    android:background="@color/colorAccent"
     tools:context=".MainActivity">
-</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make everyday decisions easier!!!"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:padding="10dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ball1"
+            android:layout_marginTop="40dp"
+            android:id="@+id/imgBall" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="ASK"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/btnAsk" />
+    </LinearLayout>
+
+
+</LinearLayout>
